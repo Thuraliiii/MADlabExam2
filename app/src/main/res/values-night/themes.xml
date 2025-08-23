@@ -3,5 +3,19 @@
     <style name="Base.Theme.LabExam2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!--primary colour -->
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorPrimaryVariant">@color/my_primary</item>
+        <item name="colorOnPrimary">@color/my_primary</item>
+
+
+        <!--secondary colour -->
+        <item name="colorSecondary">@color/my_secondary</item>
+        <item name="colorSecondaryVariant">@color/my_secondary</item>
+        <item name="colorOnSecondary">@color/my_secondary</item>
+
+        <!-- status bar colour -->
+        <item name="android:statusBarColor">@color/my_primary</item>
     </style>
 </resources>

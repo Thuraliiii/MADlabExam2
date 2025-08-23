@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabExam2">
         <activity
+            android:name=".signup"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
