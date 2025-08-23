@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,146 +9,151 @@
     android:visibility="visible"
     tools:context=".MainActivity">
 
-    <!-- Background Image -->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/logwallpapaer" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-    <!-- CardView with rounded corners -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/myCard"
-        android:layout_width="900px"
-        android:layout_height="1600px"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:alpha="0.9"
-        app:cardBackgroundColor="#D9D9D9"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="8dp">
-
-        <!-- ConstraintLayout inside CardView for free positioning -->
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/signup" />
 
-            <!-- TextView you can drag freely in Design view -->
-            <TextView
-                android:id="@+id/myText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="16dp"
-                android:padding="20dp"
-                android:text="Login"
-                android:textColor="#082108"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/signup"
+        android:textColor="#485935"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
+    <EditText
+        android:id="@+id/editTextTextEmailAddress7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
-                android:layout_height="100px"
-                app:cardCornerRadius="30dp"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="233dp">
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-                <EditText
-                    android:id="@+id/editTextTextEmailAddress3"
-                    android:layout_width="300dp"
-                    android:layout_height="100px"
-                    android:background="@null"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-                    android:text="   Email" />
-            </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/email"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#93A267"
-                android:text="Signup"
-                tools:layout_editor_absoluteX="27dp"
-                tools:layout_editor_absoluteY="437dp" />
+    <EditText
+        android:id="@+id/editTextTextPassword7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
-                android:layout_height="100px"
-                app:cardCornerRadius="30dp"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="165dp" >
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/rePa"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword7" />
 
-                <EditText
-                    android:id="@+id/editTextText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:background="@null"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:paddingStart="10dp"
-                    android:text="Name" />
-            </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/editTextTextPassword8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
-                android:layout_height="100px"
-                app:cardCornerRadius="30dp"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="299dp">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/my_secondary"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword8" />
 
-                <EditText
-                    android:id="@+id/editTextText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:background="@null"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:paddingStart="10dp"
-                    android:text="Password" />
-            </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/password"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress7" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
-                android:layout_height="100px"
-                app:cardCornerRadius="30dp"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="361dp" >
-
-                <EditText
-                    android:id="@+id/editTextText3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:background="@null"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:paddingStart="10dp"
-                    android:text="Re Enter Password" />
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back to login"
-                android:textColor="#082108"
-                tools:layout_editor_absoluteX="27dp"
-                tools:layout_editor_absoluteY="14dp" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Back to login"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
