@@ -1,42 +1,31 @@
 package com.example.labexam2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.content.Intent
-import android.widget.TextView
-import android.widget.Button
 
-
-
-class MainActivity : AppCompatActivity() {
+class mint : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
+        setContentView(R.layout.activity_mint)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        //navigate to signup
-        val signupTextView = findViewById<TextView>(R.id.textView7)
-        signupTextView.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
-            startActivity(intent)
-        }
-        //navigate to home
-        val loginButton = findViewById<Button>(R.id.button2)
-        loginButton.setOnClickListener {
+        val backButton = findViewById<ImageView>(R.id.imageView22)
+        backButton.setOnClickListener {
             val intent = Intent(this, home::class.java)
             startActivity(intent)
+            finish() //
         }
-
-
-
     }
+
+
 }

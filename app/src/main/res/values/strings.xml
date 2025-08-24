@@ -6,5 +6,15 @@
     <string name="login_button">Log in</string>
     <string name="name">Name</string>
     <string name="signup">SIGNUP</string>
+    <string name="reminderh">Check your Mint plants</string>
+    <string name="reminder">Today you have to water, 2 days to harvest</string>
+    <string name="myplants">My Plants</string>
+    <string name="profile">Profile</string>
+    <string name="mint">Mint(Mentha)</string>
+    <string name="add">Added 3 days ago</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

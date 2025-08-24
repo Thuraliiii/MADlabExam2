@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabExam2">
         <activity
+            android:name=".mint"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".myplants"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity
