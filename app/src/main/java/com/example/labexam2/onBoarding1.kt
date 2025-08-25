@@ -3,6 +3,7 @@ package com.example.labexam2
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,12 @@ class onBoarding1 : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.button3)
         nextButton.setOnClickListener {
             val intent = Intent(this, onBoarding2::class.java)
+            startActivity(intent)
+        }
+
+        val skipTextView = findViewById<TextView>(R.id.textView11)
+        skipTextView.setOnClickListener {
+            val intent = Intent(this, onBoarding3::class.java)
             startActivity(intent)
         }
     }

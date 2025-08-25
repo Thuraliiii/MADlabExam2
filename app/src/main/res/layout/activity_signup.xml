@@ -11,11 +11,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="250dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -23,11 +24,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/signup" />
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+
     </LinearLayout>
 
     <TextView
@@ -51,6 +48,8 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="Enter Email"
+        android:autofillHints="emailAddress"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
@@ -73,6 +72,8 @@
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
+        android:autofillHints="name"
+        android:hint="Enter Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -96,6 +97,8 @@
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:autofillHints="password"
+        android:hint="Enter Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -118,19 +121,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:ems="10"
+        android:hint="Re-enter Password"
         android:inputType="textPassword"
+        android:autofillHints="password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button100"
         android:layout_width="213dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/my_secondary"
-        android:text="Sign Up"
+        android:text="@string/signupBtn"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword8" />
 
     <TextView

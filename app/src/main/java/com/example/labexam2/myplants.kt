@@ -2,6 +2,7 @@ package com.example.labexam2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,21 +21,27 @@ class myplants : AppCompatActivity() {
             insets
         }
 
-        // ✅ Handle BottomNavigation clicks
+        val mintImage = findViewById<ImageView>(R.id.imageView15)
+
+        mintImage.setOnClickListener {
+            val intent = Intent(this, mint::class.java)
+            startActivity(intent)
+        }
+
+
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNav.selectedItemId = R.id.plants
+
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
-                    // Navigate back to Home activity
                     startActivity(Intent(this, home::class.java))
                     true
                 }
                 R.id.plants -> {
-                    // Already in MyPlants, do nothing
                     true
                 }
                 R.id.profile -> {
-                    // Navigate to Profile activity
                     startActivity(Intent(this, profile::class.java))
                     true
                 }

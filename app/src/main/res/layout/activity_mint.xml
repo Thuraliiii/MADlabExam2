@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".mint">
 
-    <!-- Original top content -->
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
@@ -63,7 +62,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.048">
 
-        <!-- CardView content (unchanged) -->
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
@@ -119,7 +117,6 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!-- ================= Scrollable Progress Section ================= -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollProgress"
         android:layout_width="0dp"
@@ -134,7 +131,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Copy everything from textView43 to textView50 here -->
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="wrap_content"
@@ -142,7 +138,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
                 android:text="Watering"
-                android:textColor="#000000"
+                android:textColor="@color/my_accent"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -174,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:text="Progress"
-                android:textColor="#000000"
+                android:textColor="@color/my_accent"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"

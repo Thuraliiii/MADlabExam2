@@ -21,7 +21,7 @@ class mint : AppCompatActivity() {
 
         val backButton = findViewById<ImageView>(R.id.imageView22)
         backButton.setOnClickListener {
-            val intent = Intent(this, home::class.java)
+            val intent = Intent(this, myplants::class.java)
             startActivity(intent)
             finish() //
         }

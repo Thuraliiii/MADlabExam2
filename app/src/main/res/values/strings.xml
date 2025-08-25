@@ -5,13 +5,16 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="rePa">Re Enter Password</string>
-    <string name="login_button">Log in</string>
+    <string name="login_button">Log In</string>
     <string name="name">Name</string>
-    <string name="signup">SIGNUP</string>
+    <string name="signup">SIGN UP</string>
+    <string name="signupBtn">Sign Up</string>
+
     <string name="reminderh">Check your Mint plants</string>
     <string name="reminder">Today you have to water, 2 days to harvest</string>
     <string name="myplants">My Plants</string>
     <string name="profile">Profile</string>
+    <string name="addPlant">Add a plant +</string>
     <string name="mint">Mint(Mentha)</string>
     <string name="add">Added 3 days ago</string>
     <string name="onb1main">Grow Healthy Plants, Hassle-Free</string>

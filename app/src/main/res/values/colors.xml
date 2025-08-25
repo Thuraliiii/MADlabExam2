@@ -7,6 +7,8 @@
 
     <color name="my_primary">#FBFBFB</color>
     <color name="my_secondary">#93A267</color>
+    <color name="my_accent">#485935</color>
+
 
     <color name="my_navbar_color">#93A267</color>
     <color name="my_hover_color">#485935</color>
