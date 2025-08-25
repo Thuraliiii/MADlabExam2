@@ -1,4 +1,6 @@
 <resources>
+
+    <string name="app">PlantMate</string>
     <string name="login">WELCOME</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -12,6 +14,15 @@
     <string name="profile">Profile</string>
     <string name="mint">Mint(Mentha)</string>
     <string name="add">Added 3 days ago</string>
+    <string name="onb1main">Grow Healthy Plants, Hassle-Free</string>
+    <string name="onb1sub">Track care tasks, watering, and fertilizing – all in one place</string>
+    <string name="onb2main">Identify Sickness</string>
+    <string name="onb2sub">Upload a photo and get instant insights about plant health</string>
+    <string name="onb3main">Plant Care Reminder</string>
+    <string name="onb3sub">Set watering, sunlight, and fertilizing reminders – we’ll notify you on time</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
