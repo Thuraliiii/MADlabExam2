@@ -71,8 +71,8 @@
             android:layout_gravity="clip_vertical|center_vertical"
             android:includeFontPadding="false"
             android:paddingLeft="16dp"
-            android:text="14 Days"
-            android:textColor="#ffffff"
+            android:text="@string/days"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <View
@@ -96,7 +96,7 @@
                 android:gravity="clip_vertical|center_horizontal|fill_vertical"
                 android:paddingTop="10dp"
                 android:text="@string/reminderh"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -117,7 +117,7 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="16dp"
                 android:text="@string/reminder"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -153,7 +153,7 @@
             android:paddingTop="10dp"
             android:paddingRight="6dp"
             android:text="Latest added plant"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <TextView
@@ -164,7 +164,7 @@
             android:paddingRight="6dp"
             android:paddingBottom="35dp"
             android:text="Mint"
-            android:textColor="#000000" />
+            android:textColor="@color/black" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="141dp"
@@ -201,8 +201,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
-        android:text="Upcoming Maintenances"
-        android:textColor="#000000"
+        android:text="@string/maintain"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
@@ -337,8 +337,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
-        android:text="What’s Wrong With My Plant?"
-        android:textColor="#000000"
+        android:text="@string/wrong"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toStartOf="@+id/textView30"
@@ -370,7 +370,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:text="Take Photo"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
@@ -399,7 +399,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
         android:text="Choose from Gallery"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 

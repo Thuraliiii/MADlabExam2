@@ -34,7 +34,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:text="@string/onb2main"
-        android:textColor="#485935"
+        android:textColor="@color/my_accent"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

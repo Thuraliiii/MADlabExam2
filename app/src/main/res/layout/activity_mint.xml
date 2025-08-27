@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/mint"
-        android:textColor="#485935"
+        android:textColor="@color/my_accent"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="124dp"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/add"
@@ -70,7 +70,7 @@
             android:includeFontPadding="false"
             android:paddingLeft="16dp"
             android:text="14 Days"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <View
